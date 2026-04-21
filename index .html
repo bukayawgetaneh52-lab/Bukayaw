@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Bukayaw Getaneh | IT Self-Introdution</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: 95%;
+    }
+ body {
+      
+      background: white;
+      color: red;
+      line-height: 1.5;
+      border-right: 10px solid blue;
+      border-left: 10px solid red;
+   border-top: 10px solid red;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .navbar {
+      background: yellow;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      border-bottom: 1px solid red;
+    }
+ .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding: 16px 0;
+    }
+  .logo {
+      font-weight: 700;
+      font-size: 1.6rem;
+      background: linear-gradient(135deg, red);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      letter-spacing: -0.3px;
+    }
+.nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+ .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: green;
+      transition: color 0.2s ease;
+      font-size:16px;
+    }
+    .hero {
+      padding: 5px;
+    }
+.hero-grid {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 3rem;
+      justify-content: space-between;
+    }
+
+    .hero-content {
+      flex: 1;
+    }
+
+    .hero-badge {
+      background: black;
+      color: white;
+      display: inline-block;
+      padding: 5px ;
+      border-radius: 30px;
+       font-weight: 600;
+       }
+.hero-content h1 {
+      font-size: 30px;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.2;
+      margin-bottom: 10px;
+       background-clip: text;
+   color: red;
+    }
+  .hero-highlight {
+      font-size: 20px;
+      color: blue;
+      font-weight: 500;
+    }
+
+    .hero-desc {
+      color: green;
+      max-width: 90%;
+      margin-bottom: 30px;
+    }
+  .avatar-circle {
+      flex: 0.6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+ .avatar {
+      width: 240px;
+      height: 240px;
+      background: linear-gradient(145deg);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 3px solid green;
+    }
+.avatar-initials {
+      font-size: 5rem;
+      font-weight: 700;
+      background: linear-gradient(135deg, red, blue);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+    }
+    .section-title {
+      font-size: 2rem;
+      font-weight: 700;
+      margin-bottom: 2rem;
+      position: relative;
+      display: inline-block;
+    }
+    .section-title:after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      left: 0;
+      width: 60%;
+      height: 4px;
+      background: brown;
+      border-radius: 4px;
+    }
+ .about-card, .education-card {
+      background: white;
+      border-radius: 28px;
+      padding: 2rem;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.03);
+      border: 1px solid red;
+      transition: all 0.2s;
+    }
+ .about-text p {
+      margin-bottom: 1rem;
+      color: green;
+    }
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+    .project-card {
+      background: white;
+      border-radius: 28px;
+      overflow: hidden;
+      transition: all 0.3s ease;
+      border: 2px solid red;
+      box-shadow: 0 6px 14px rgba(0,0,0,0.02);
+    }
+    .project-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 36px -16px rgba(0, 0, 0, 0.12);
+      border-color: greenyellow;
+    }
+    .project-info {
+      padding: 1.6rem;
+    }
+    .project-info h3 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+    }
+    .project-tags {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin: 0.8rem 0;
+    }
+    .project-tags span {
+      background: yellow;
+      padding: 0.2rem 0.8rem;
+      border-radius: 30px;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: red;
+    }
+    .project-card p {
+      color: green;
+      font-size: 0.9rem;
+    }
+    .contact-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      background: white;
+      border-radius: 32px;
+      padding: 2rem;
+      border: 2px solid green;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.02);
+    }
+    .contact-info {
+      flex: 1;
+    }
+    .contact-info h3, .contact-form h3 {
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+    .contact-detail {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin: 1.2rem 0;
+    }
+    .contact-detail i {
+      width: 32px;
+      color: blue;
+      font-size: 1.3rem;
+    }
+    .contact-form {
+      flex: 1;
+    }
+    .input-group {
+      margin-bottom: 1.2rem;
+    }
+    .input-group input, .input-group textarea {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border-radius: 20px;
+      border: 1px solid red;
+      font-family: inherit;
+      transition: 0.2s;
+      background: yellow;
+    }
+    .input-group input:focus, .input-group textarea:focus {
+      outline: none;
+      border-color: blue;
+      box-shadow: 0 0 0 3px rgba(37,99,235,0.2);
+    }
+    .static-submit {
+      width: 100%;
+      background: green;
+      color: white;
+      border: none;
+      padding: 0.9rem;
+      font-weight: 600;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: 0.2s;
+      font-size: 1rem;
+    }
+    .static-submit:hover {
+      background: red;
+    }
+    footer {
+      background: blue;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+      margin-top: 4rem;
+      font-size: 0.85rem;
+    }
+@media (max-width: 780px) {
+  .hero-grid {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+      .hero-content {
+        text-align: center;
+      }
+      .hero-desc {
+        max-width: 100%;
+      }
+      .hero-buttons {
+        justify-content: center;
+      }
+      .nav-container {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+      .nav-links {
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      .section-title:after {
+        width: 40%;
+      }
+      .contact-wrapper {
+        flex-direction: column;
+      }
+      .avatar {
+        width: 180px;
+        height: 180px;
+      }
+      .avatar-initials {
+        font-size: 3.5rem;
+      }
+      .hero-content h1 {
+        font-size: 2.2rem;
+      }
+    }
+    table{
+      border-bottom: 10px solid green;
+      border-top: 10px solid red;
+      border-right: 10px solid yellow;
+      border-left: 10px solid blue;
+      background-color: blueviolet;
+      color: white;
+         }
+  </style>
+</head>
+<body>
+<nav class="navbar">
+  <div class="container nav-container">
+    <div class="logo">Bukayaw.dev</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+<main>
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <span class="hero-badge"><i class="fas fa-graduation-cap"></i> 2nd Year IT Student</span>
+        <h1>Bukayaw Getaneh</h1>
+        <div class="hero-highlight">Building tomorrow's digital solutions</div>
+        <p class="hero-desc">I am Bukayaw Getaneh, a 2nd year Information Technology student at Mizan Tepi University. I am driven by a passion for questions and problem-solving, and I am interested in creating clean and responsive web page designs.</p>
+        <div class="hero">
+          <a href="#projects" class="btn">Explore Work</a>
+          <a href="#contact" class="btn btn-outline">Let's Connect</a>
+        </div>
+      </div>
+      <div class="avatar-circle">
+        <div class="avatar">
+          <span class="avatar-initials">BG</span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="about" class="container" style="margin: 2rem auto 3rem;">
+    <div class="about-card">
+      <h2 class="section-title">About Me</h2>
+     <input type="image" src="bb.jpg" alt=""height=150 width="100">
+      <div class="about-text">
+        <p>Hello! I'm <strong>Bukayaw Getaneh</strong>, a second-year Information Technology student at <strong>Mizan Tepi University</strong> From the moment I wrote my first line of HTML, I realized that technology is a key tool for empowering communities. My main focus is creating user-centered web experiences and building scalable digital solutions. </p>
+        <p>Currently, I am practicing front-end development (HTML, CSS) and studying back-end concepts. I believe in clean code, continuous learning, and empathetic design.</p>
+         </div>
+    </div>
+  </section>
+  <section id="projects" class="container" >
+    <h2 class="section-title">Built Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-info">
+          <h3>Self-introduction</h3>
+          <div class="project-tags"><span>HTML</span><span>CSS</span></div>
+          <p>"This is because this project helps me introduce myself to any person or community.in this project to work used html and css"</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="contact" class="container" >
+    <h2 class="section-title">GET IN THIS FIELD</h2>
+    <div class="contact-wrapper">
+      <div class="contact-info">
+        <h3><i class="fas fa-comment-dots"></i> Let's talk</h3>
+        <p>Have a project in mind or just want to connect? Feel free to reach out — I'm always open to discussions and collaborations.</p>
+        <div class="contact-detail">
+          <i class="fas fa-envelope"></i>
+          <span>bukayaw.g@mizan-tepi.edu.et</span>
+        </div>
+        <div class="contact-detail">
+          <i class="fas fa-phone-alt"></i>
+          <span>+251 927717346</span>
+        </div>
+        <div class="contact-detail">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Mizan Tepi, Ethiopia</span>
+        </div>
+        </div>
+      <div class="contact-form">
+        <h3>Send a Message</h3>
+         </div>
+  </section>
+</main>
+  <footer>
+    <input type="image" src="bb.jpg" alt=""height="150" width="100">
+  <div class="container">
+    <p>© 2025 Bukayaw Getaneh — Second-year IT, Mizan Tepi University. using pure HTML & CSS.</p>
+    <p style="margin-top: 0.5rem; font-size: 0.75rem;">"Empowering ideas through code"</p>
+  </div>
+</footer>
+<table border="1" cellspacing="0">
+  <ul>
+    <tr>
+    <th>id</th>
+    <th>dept</th>
+    <th>section</th>
+    <th>submitted to</th>
+    <th>submission date</th>
+    </tr>
+    <tr>
+      <td>7869/17</td>
+      <td>IT</td>
+      <td>A</td>
+      <td>Mr.ATD</td>
+      <td>12/08/2018E.C.</td>
+    </tr>
+  </ul>
+  </table>
+</body>
+</html>
